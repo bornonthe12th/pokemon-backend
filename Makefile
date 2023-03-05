@@ -2,9 +2,9 @@
 install:
 	docker run -it --rm -v $(CURDIR):/app composer/composer install
 
-## Run phpunit tests
-test-phpunit:
-	./vendor/bin/sail test --configuration phpunit.xml
+## Migration
+sail-migrate:
+	./vendor/bin/sail php artisan migrate:fresh
 
 ## Start Sail
 sail-start:
