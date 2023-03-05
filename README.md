@@ -34,13 +34,14 @@
 ```$xslt
     make install
 ```
-```$xslt
-    make sail migrate
-```
 
 ##### Start Containers
 ```$xslt
     make sail-start
 ```
 
+#### Run Migration
+```$xslt
+    make sail-migrate
+```
 
